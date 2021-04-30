@@ -102,7 +102,7 @@ main .site-title{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background: linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0.95)), url(/image/computer1.jpg);
+    background: linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0.95)), url(computer1.jpg);
 } 
 .site-title .title-content{
     margin-top: 15rem;
@@ -144,7 +144,7 @@ main .site-title{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background:url(/image/elearning.jpg); 
+    background:url(elearning.jpg); 
     top: 0;
     left: 0;
     bottom: 0;
@@ -469,28 +469,28 @@ footer .footer-icons .icon-content .copyright{
 /* --------------- background animation section ------------ */
 @keyframes fade{
     20%{
-        background:url(/image/smart-home-3148026_1920.jpg);
+        background:url(smart-home-3148026_1920.jpg);
         width:120%;
         background-repeat:no-repeat;
     }
     40%{
-        background:url(/image/istockphoto-1212945980-170667a.jpg);
+        background:url(istockphoto-1212945980-170667a.jpg);
         background-repeat:no-repeat;
         width:120%;
     }
     60%{
-        background:url(/image/background-5316533_1920\ -\ Copy.jpg);
+        background:url(background-5316533_1920\ -\ Copy.jpg);
         background-repeat:no-repeat;
         width:120%;
     }
 
     70%{
-        background:url(/image/teambuilding.jpeg);
+        background:url(teambuilding.jpeg);
         background-repeat:no-repeat;
         width:120%;
     }
     100%{
-        background:url(/image/computer1.jpg);
+        background:url(computer1.jpg);
         background-repeat:no-repeat;
         width:120%;
     }
