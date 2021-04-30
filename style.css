@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/*---------------- NAVIGATION-MENU -------------------*/
+.navbar .max-width{
+    max-width:100%;
+    margin: auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: #000;
+    font-family: sans-serif;
+    transition: all .3s ease;
+    z-index: 999;
+}
+.navbar.sticky{
+    background: #002030;
+    padding: 0.2rem 0;
+}
+.navbar .logo img{
+    width: 6.5rem;
+    height: auto;
+    margin: 0.3rem 0 0 7rem; 
+    padding: 0.5rem;
+}
+.navbar .logo img{
+    width: 7rem;
+    height: auto;
+    margin: 0.1rem 0 -0.5rem 5rem; 
+    padding: 0rem;
+}
+.navbar .menu li a{
+    color: #a9a9a9;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: block;
+}
+.navbar .menu li a:hover{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    text-align: right;
+    margin-left: 2rem;
+    display: inline-block;
+}
+.navbar .menu{
+    margin: -3rem 05rem 2rem 0;
+    text-align: right;
+}
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+
+/* -------- scroll up button ---------- */
+.scroll-up-btn{
+    position: fixed;
+    right: 2.2rem;
+    bottom: 8rem; 
+    text-align: center;
+    font-size: 2rem;
+    color: #002030;
+    pointer-events: none;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 9999;
+}
+.scroll-up-btn.show{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+    z-index: 9999;
+    background: #a9a9a9;
+    padding: 0 0.6rem;
+    border-radius: 8px;
+}
+.scroll-up-btn:hover{
+    color: #fff;
+}
+
+/*---------- home section ------------*/
+main .site-title{
+    text-align: center;
+    display: flex;
+    width:100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0.95)), url(/image/computer1.jpg);
+} 
+.site-title .title-content{
+    margin-top: 15rem;
+    color: #a9a9a9;
+    font-size: 1.5rem;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   transition: all 0.3s ease-out;
+}
+.site-title span{
+    color: #a9a9a9;
+    font-weight: 800;
+}
+.site-title h1{
+    font-size: 2rem;
+}
+.site-title .btn{
+    padding: 1rem 0;
+    width: 10rem;
+    align-self: center;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 6rem;
+    margin-top: 2rem;
+   font-weight: 600;
+   color: #a9a9a9;
+   background-color: #002030;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #a9a9a9;
+    color: #fff;
+}
+/* --------- site title animation ---------- */
+.image-box{
+    width:100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:url(/image/elearning.jpg); 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    animation: fade 30s infinite;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*------------ about section ------------*/
+.about .about-content{
+    margin: auto;
+    display: flex;
+    padding: 0 2rem 0 0;
+}
+.about-content .p1{
+ margin-top: -1.3rem;
+    padding-right: 2rem;
+    text-align: justify;
+}
+.about-content .p1 span{
+color: #00203fff;
+}
+.about .max-width{
+    font-family: 'poppin', sans-serif; 
+    width: 100vw; 
+    padding: 2rem 2rem;
+}
+.about .title{
+    position: relative;
+    font-family: 'ubuntu',sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+    padding-bottom: 1rem;
+    padding: 1rem 0 0 -1rem;
+    z-index: -1;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    width: 10rem;
+    height: 3px;
+    background: #00203fff;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "Who I am";
+    position: absolute;
+    font-size: 1rem;
+    background: #fff;
+    bottom: -0.67rem;
+    padding: 0.3rem;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #00203fff;
+}
+.about img{
+    height: 20rem;
+    width: 25rem;
+    margin-left: -1rem;
+    margin-top: -2rem;
+}
+.p1 a{
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    color: #a9a9a9;
+    font-weight: 900;
+    font-size: 0.8rem;
+    background-color: #002030;
+}
+.p1  a:hover{
+    color: #002030;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #a9a9a9;
+}
+    #more{
+        display: none;
+       
+    }
+    #moreBtn{
+        padding: 0.5rem;
+        color: #002030;
+        border: none;
+        font-size: 1rem;
+        background: none;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    #moreBtn:hover {
+        color: #002030;
+        opacity: 1;
+    }
+/* -------------competence section ------------- */
+.competence{
+    width: 100%;
+}
+.competence-content{
+    margin-top: 2rem;
+   padding: 2.5rem 0;
+    display: flex;
+    font-family: 'poppin', sans-serif; 
+    background: #002030;
+    width: 100%;
+    color: #d3d3d3;
+    line-height: 1.7rem;
+    }
+.p2, .p3, .p4 {
+    padding: 1rem 5rem;
+} 
+
+/* ------------- contact section ---------- */
+.contact{
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    width: 100vw;
+}
+.contact .title{
+    position: relative;
+    font-family: 'ubuntu',sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+    padding-bottom: 1.5rem;
+}
+.contact .title::before{
+    content: "";
+    position: absolute;
+    width: 11rem;
+    height: 3px;
+    background: #00203fff;
+    bottom: 0px;
+    align-items: center;
+    margin-left: -1.6rem;
+}
+.contact .title::after{
+    content: "Get in touch";
+    position: absolute;
+    font-size: 1rem;
+    background: #fff;
+    bottom: -0.67rem;
+    padding: 0.3rem;
+    font-weight: bold;
+    margin-left: -7rem;
+    align-items: center;
+    color: #00203fff;
+}
+.contact-content{
+padding: 1rem 0rem 0 5rem;
+}
+.contact-content .icon{
+    width: 100%;
+    color: #00203fff;
+}
+.contact-content .icon i{
+    font-size: 2rem;
+    padding: 0.7rem;
+    padding-top: 1rem;
+}
+.info{
+   padding-top: 0;
+   padding-bottom: 1rem;
+}
+.head{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.icon .sub-title{
+    font-size: 1.3rem;
+}
+
+.contact-details{
+    display: flex;
+}
+.contact-content{
+    width: 100%;
+    padding: 1rem -2rem 0rem 3rem;
+    }
+
+    /* -------- contact form section ------------- */
+.column{
+    margin-left: 0rem;
+    width: 100%;
+    margin-right: 2.3rem;
+}
+.column .text{
+    font-family: 'poppins',sans-serif;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    color: #00203fff;
+    font-weight: 600;
+    margin-left: -3rem;
+}
+ .column .form .fields{
+    height: auto;
+    width: 100%;
+}
+.column form input, .column form .field-textarea textarea{
+    height: 50%;
+    width: 90%;
+    border-top-style:none ;
+    border-radius: 7px;
+    outline: none;
+    padding: 0.5rem 0.3rem;
+    font-family: 'poppins',sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-left-style: none;
+    border-right-style: none;
+    background: #eff0f5;
+}
+.field-textarea textarea{
+    resize: vertical;
+}
+.column form button{
+    width:10rem;
+    padding: 0.5rem 0;
+    background: #002030;
+    border-radius: 6px;
+    color: #d3d3d3;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.column form button:hover{
+    background: transparent;
+    color: #00203fff;
+}
+#status{
+    text-align: center;
+    font-size: 2rem;
+    transition: all 0.7s ease;
+    margin-top: -2.5rem;
+}
+#status.success{
+    color: #00203fff;
+    animation: status 4s ease forwards;
+}
+#status.error{
+    color: red;
+    animation: status 4s ease forwards;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+/* --------------- footer section --------------- */
+footer{
+    background: #002030;
+    display: flex;
+    padding: 1rem 0rem 2rem 5rem;
+    margin-top: 7rem;
+}
+.icon-content, .footer-icons, .footer-icons p{
+    color: #a9a9a9;
+}
+.footer-icons a{
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    color: #a9a9a9;
+}
+.links, .links a{
+    color: #a9a9a9;
+    list-style: none;
+    text-decoration: none;
+}
+footer .links{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.social{
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-weight: 600;
+}
+.footer-icons{
+     padding-top: 1.5rem;
+    justify-self: center;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+footer a:hover{
+color: #fff;
+}
+footer a{
+    text-decoration: none;
+}
+.line4{
+    width: 13rem;
+    height: 0.1rem;
+    background-color: hsl(0, 0%, 66%);
+    margin-left: 1.2rem;
+    margin-top: 2rem;
+}
+footer .footer-icons .icon-content .copyright{
+    font-size: 1.2rem;
+    margin-top: 0.7rem;
+    margin-left: 2rem;
+}
+/* --------------- background animation section ------------ */
+@keyframes fade{
+    20%{
+        background:url(/image/smart-home-3148026_1920.jpg);
+        width:120%;
+        background-repeat:no-repeat;
+    }
+    40%{
+        background:url(/image/istockphoto-1212945980-170667a.jpg);
+        background-repeat:no-repeat;
+        width:120%;
+    }
+    60%{
+        background:url(/image/background-5316533_1920\ -\ Copy.jpg);
+        background-repeat:no-repeat;
+        width:120%;
+    }
+
+    70%{
+        background:url(/image/teambuilding.jpeg);
+        background-repeat:no-repeat;
+        width:120%;
+    }
+    100%{
+        background:url(/image/computer1.jpg);
+        background-repeat:no-repeat;
+        width:120%;
+    }
+}
